@@ -1,0 +1,22 @@
+[package]
+name = "gameband_rs"
+version = "0.1.0"
+edition = "2021"
+description = "Rewrite of the Gameband software in rust"
+
+[dependencies]
+fltk = "^1.2"
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+tempfile = "3"
+
+[package.metadata.bundle]
+name = "Gameband"
+identifier = "org.vorax.henry.gameband-rs"
+category = "Games"
+short_description = "Minecraft Launcher and Pixelforge replacement"
+long_description = """
+A rewrite of the Gameband software in rust,
+the existing gameband software is somewhat inadequate for modern OSs.
+"""
+copyright = "Copyright (c) Henry Asbridge 2021. All rights reserved"
